@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'recAnnouncements';
+
+  navLinks = [
+    { path: 'primary', label: 'Pre-Primary & Primary' },
+    { path: 'secondary', label: 'Secondary' },
+    // { path: 'general', label: 'General' },
+  ];
+
+  panelOpenState = false;
 }

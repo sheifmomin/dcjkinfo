@@ -1,21 +1,34 @@
-<div class="header">
-  <h2>DC REC Announcements</h2>
-</div>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side" [mode]="'over'">
+    <mat-list>
+      <mat-list-item (click)="drawer.toggle()">
+        <span class="material-icons">
+          close
+        </span></mat-list-item>
+    </mat-list><br>
+    <mat-divider></mat-divider>
+    <mat-label>
+      <nav mat-tab-nav-bar *ngFor="let link of navLinks">
+        <mat-nav-list class="list-horizontal" (click)="drawer.toggle()">
+          <a mat-tab-link [routerLink]="link.path" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+            {{link.label}}
+          </a>
+        </mat-nav-list>
+      </nav>
+    </mat-label>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div class="header">
+      <span class="material-icons" (click)="drawer.toggle()">
+        menu
+      </span>
+      <h3>DC JK Announcements</h3>
+    </div>
 
-<nav mat-tab-nav-bar>
-  <a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.path" routerLinkActive #rla="routerLinkActive"
-    [active]="rla.isActive">
-    {{link.label}}
-  </a>
-</nav>
-
-<router-outlet></router-outlet>
-
-<hr>
-
-<br>
-<!-- Copyright -->
-<div class="footer-copyright text-center py-3 intro"><i>© 2020 Copyright: DC REC Management Team</i>
-</div>
-<br>
-<!-- Copyright -->
+    <router-outlet></router-outlet>
+    <br>
+    <div class="footer-copyright text-center py-3 intro"><i>© 2020 Copyright: DC JK Management</i>
+    </div>
+    <br>
+  </mat-drawer-content>
+</mat-drawer-container>

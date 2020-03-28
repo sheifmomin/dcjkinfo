@@ -15,6 +15,10 @@ import { PrimaryComponent } from './primary/primary.component';
 import { SecondaryComponent } from './secondary/secondary.component';
 import { GeneralComponent } from './general/general.component';
 import { RouterModule, Routes } from '@angular/router';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 
 const appRoutes: Routes = [
   {
@@ -22,8 +26,8 @@ const appRoutes: Routes = [
     redirectTo: 'primary',
     pathMatch: 'full'
   },
-  { path: 'primary', component: PrimaryComponent },
-  { path: 'secondary', component: SecondaryComponent },
+  { path: 'events', component: PrimaryComponent },
+  { path: 'mijalis', component: SecondaryComponent },
   { path: 'general', component: GeneralComponent }
 ];
 
@@ -49,7 +53,10 @@ const appRoutes: Routes = [
     MatInputModule,
     MatListModule,
     MatToolbarModule,
-    MatTabsModule
+    MatTabsModule,
+    MatSidenavModule,
+    MatIconModule,
+    MDBBootstrapModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,10 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  showFiller = false;
+
   navLinks = [
-    { path: 'primary', label: 'Pre-Primary & Primary' },
-    { path: 'secondary', label: 'Secondary' },
-    // { path: 'general', label: 'General' },
+    { path: 'events', label: 'Virtual Events' },
+    { path: 'mijalis', label: 'Upcoming Mijalis' }
   ];
 
   panelOpenState = false;

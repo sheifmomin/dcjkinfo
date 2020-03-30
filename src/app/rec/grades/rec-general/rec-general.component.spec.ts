@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GeneralComponent } from './general.component';
+import { RecGeneralComponent } from './rec-general.component';
 
-describe('GeneralComponent', () => {
-  let component: GeneralComponent;
-  let fixture: ComponentFixture<GeneralComponent>;
+describe('RecGeneralComponent', () => {
+  let component: RecGeneralComponent;
+  let fixture: ComponentFixture<RecGeneralComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GeneralComponent ]
+      declarations: [ RecGeneralComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GeneralComponent);
+    fixture = TestBed.createComponent(RecGeneralComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

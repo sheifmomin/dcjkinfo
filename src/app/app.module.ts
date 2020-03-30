@@ -10,34 +10,48 @@ import { MatInputModule } from '@angular/material';
 import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTabsModule } from '@angular/material/tabs';
-import { PrePrimaryComponent } from './pre-primary/pre-primary.component';
 import { PrimaryComponent } from './primary/primary.component';
 import { SecondaryComponent } from './secondary/secondary.component';
-import { GeneralComponent } from './general/general.component';
 import { RouterModule, Routes } from '@angular/router';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { ContactComponent } from './contact/contact.component';
+import { RecComponent } from './rec/rec.component';
+import { RecPrimaryComponent } from './rec/grades/rec-primary/rec-primary.component';
+import { RecSecondaryComponent } from './rec/grades/rec-secondary/rec-secondary.component';
+import { RecGeneralComponent } from './rec/grades/rec-general/rec-general.component';
 
 
 const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: 'primary',
+    redirectTo: 'events',
     pathMatch: 'full'
   },
   { path: 'events', component: PrimaryComponent },
   { path: 'mijalis', component: SecondaryComponent },
-  { path: 'general', component: GeneralComponent }
+  {
+    path: 'rec', component: RecComponent,
+    children: [
+      { path: '', component: RecGeneralComponent },
+      { path: 'general', component: RecGeneralComponent },
+      { path: 'primary', component: RecPrimaryComponent },
+      { path: 'secondary', component: RecSecondaryComponent }]
+  },
+  { path: 'contact', component: ContactComponent },
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    PrePrimaryComponent,
     PrimaryComponent,
     SecondaryComponent,
-    GeneralComponent
+    ContactComponent,
+    RecComponent,
+    RecPrimaryComponent,
+    RecSecondaryComponent,
+    RecGeneralComponent,
   ],
   imports: [
     RouterModule.forRoot(

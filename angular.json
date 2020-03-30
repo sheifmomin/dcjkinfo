@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/recAnnouncements",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -54,6 +55,10 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
                 }
               ]
             }
@@ -122,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "recAnnouncements"
+  "defaultProject": "recAnnouncements",
+  "cli": {
+    "analytics": "14a524ae-4459-4d12-b4d1-1307286a6369"
+  }
 }

@@ -27,14 +27,3 @@ body {
 .mat-expansion-panel-header.mat-expanded:focus {
   background-color: #c1ffc1;
 }
-
-.calendar-icon {
-  font-size: 15px !important;
-}
-
-.calendar-events,
-.calendar-month {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}

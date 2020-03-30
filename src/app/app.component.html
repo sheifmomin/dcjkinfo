@@ -2,7 +2,7 @@
   <mat-drawer #drawer class="example-sidenav" mode="side" [mode]="'over'">
     <mat-list>
       <mat-list-item (click)="drawer.toggle()">
-        <span class="material-icons">
+        <span class="material-icons close-icon">
           close
         </span></mat-list-item>
     </mat-list><br>
@@ -10,16 +10,16 @@
     <mat-label>
       <nav mat-tab-nav-bar *ngFor="let link of navLinks">
         <mat-nav-list class="list-horizontal" (click)="drawer.toggle()">
-          <a mat-tab-link [routerLink]="link.path" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+          <button class="menu-button" mat-icon-button [routerLink]="link.path" routerLinkActive="mat-accent">
             {{link.label}}
-          </a>
+          </button>
         </mat-nav-list>
       </nav>
     </mat-label>
   </mat-drawer>
   <mat-drawer-content>
     <div class="header">
-      <span class="material-icons" (click)="drawer.toggle()">
+      <span class="material-icons menu-bar" (click)="drawer.toggle()">
         menu
       </span>
       <h3>DC JK Announcements</h3>

@@ -2,16 +2,6 @@
   margin-left: 8px;
 }
 
-.intro,
-.intro1 {
-  margin-left: 25px;
-  padding-right: 12px;
-}
-
-.intro1 {
-  color: black;
-}
-
 /* Header/Logo Title */
 .header {
   padding: 6px;
@@ -28,19 +18,16 @@ body {
   background-color: #e0ffff;
 }
 
-.gradehdr {
+.secondary-style {
+  padding: 15px;
+}
+
+.mat-expansion-panel-header.mat-expanded,
+.mat-expansion-panel-header.mat-expanded:hover,
+.mat-expansion-panel-header.mat-expanded:focus {
   background-color: #c1ffc1;
 }
 
-.genhdr {
-  background-color: #ffffe0;
-}
-
-.hdr {
-  border-style: dashed solid dashed solid;
-  border-width: 1px;
-}
-
-.grade {
+.secondary-style {
   padding: 15px;
 }

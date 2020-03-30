@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PrePrimaryComponent } from './pre-primary.component';
+import { RecSecondaryComponent } from './rec-secondary.component';
 
-describe('PrePrimaryComponent', () => {
-  let component: PrePrimaryComponent;
-  let fixture: ComponentFixture<PrePrimaryComponent>;
+describe('RecSecondaryComponent', () => {
+  let component: RecSecondaryComponent;
+  let fixture: ComponentFixture<RecSecondaryComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PrePrimaryComponent ]
+      declarations: [ RecSecondaryComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PrePrimaryComponent);
+    fixture = TestBed.createComponent(RecSecondaryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

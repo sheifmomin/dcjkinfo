@@ -32,6 +32,7 @@ body {
 }
 
 .example-sidenav {
+  width: 15rem !important;
   background-color: #9370db;
   color: white;
 }
@@ -54,6 +55,31 @@ mat-nav-list.list-horizontal {
   .mat-list-item {
     display: inline-block;
     height: auto;
-    width: auto;
+    width: 20%;
   }
+}
+
+.mat-tab-link {
+  padding: 0;
+}
+
+.menu-button {
+  height: 3rem;
+  width: 15rem;
+  color: white;
+  font-size: 12pt;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: 0;
+}
+
+.menu-button:hover {
+  background-color: #6b5694;
+}
+
+.close-icon:hover,
+.menu-bar:hover {
+  color: lightgray;
 }

@@ -1,20 +1,21 @@
-<mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'"
-	[animation]="'slide'">
-	<mdb-carousel-item *ngFor="let item of slides; let i = index">
-		<div class="col-md-4" [ngClass]="{'d-none d-md-block': cardIndex !== 0}"
-			*ngFor="let card of item; let cardIndex = index">
-			<mdb-card class="my-1">
-				<mdb-card-img [src]="card.img" alt="Card image cap"></mdb-card-img>
-				<mdb-card-body>
-					<mdb-card-title>
-						<h4>{{card.title}}</h4>
-					</mdb-card-title>
-					<p>{{card.description}}</p>
-					<a href="#" mdbBtn color="primary" class="waves-light" mdbWavesEffect>{{card.buttonText}}</a>
-				</mdb-card-body>
-			</mdb-card>
-		</div>
-	</mdb-carousel-item>
-</mdb-carousel>
-
-<span>Work in Progress....</span>
+<div class="primary-style">
+	<mat-toolbar class="hdr">Mijalis for Year 2020: </mat-toolbar>
+	<mat-accordion>
+		<!-- April-->
+		<mat-expansion-panel *ngFor="let event of mijalis">
+			<mat-expansion-panel-header class="datehdr">
+				<mat-panel-title class="calendar-month">
+					<i class="material-icons calendar-icon">
+						calendar_today
+					</i>&nbsp;&nbsp; <b>{{event[0]}}&nbsp;</b> - {{event[1]}}
+				</mat-panel-title>
+			</mat-expansion-panel-header>
+			<div>
+				<mat-list class="calendar-events" *ngFor="let date of event[2]">
+					<mat-list-item>&#9673;&nbsp;<b> {{date[0]}}</b>: {{date[1]}}</mat-list-item>
+				</mat-list>
+				<mat-divider></mat-divider>
+			</div>
+		</mat-expansion-panel>
+	</mat-accordion>
+</div>

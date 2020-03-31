@@ -14,21 +14,8 @@ body {
   font-family: Arial;
 }
 
-.calendar-expansion {
-  border-style: solid solid solid solid;
-  border-width: 0.5px;
-  background-color: #e0ffff;
-  height: 25px !important;
-}
-
 .primary-style {
   padding: 15px;
-}
-
-.mat-expansion-panel-header.mat-expanded,
-.mat-expansion-panel-header.mat-expanded:hover,
-.mat-expansion-panel-header.mat-expanded:focus {
-  background-color: #c1ffc1;
 }
 
 .calendar {
@@ -40,11 +27,47 @@ body {
   display: none !important;
 }
 
-.about-calendar {
-  font-size: 15px;
-  padding-top: 2px;
-}
-
+.warning-expansion,
 .calendar-expansion {
   border: 0.8px solid black;
+}
+
+.warning-expansion,
+.warning-expansion:hover,
+.warning-expansion:focus {
+  background-color: rgba(230, 84, 84, 0.897) !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 13px;
+}
+
+.calendar-expansion,
+.calendar-expansion:hover,
+.calendar-expansion:focus {
+  background-color: #e0ffff !important;
+}
+
+.about-warning,
+.about-calendar {
+  font-size: 18px;
+}
+
+.info-btn {
+  cursor: pointer;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  padding: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.info-btn:hover {
+  background-color: #2a4d2c; /* Green */
 }

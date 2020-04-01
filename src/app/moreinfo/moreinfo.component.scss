@@ -1,0 +1,42 @@
+.more-info {
+	padding: 20px;
+}
+
+.button {
+	background-color: #4caf50; /* Green */
+	border: none;
+	color: white;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.enroll {
+	background-color: white;
+	color: black;
+	border: 2px solid #4caf50;
+}
+
+.enroll:hover {
+	background-color: #4caf50;
+	color: white;
+}
+
+.msg-error {
+	float: right;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.msg-err {
+	color: red;
+}
+
+.device-name {
+	font-size: 10px;
+}

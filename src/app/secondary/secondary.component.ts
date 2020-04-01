@@ -95,7 +95,7 @@ export class SecondaryComponent implements OnInit {
       ['Sunday 25th', 'Paanch Baar Saal'],
       ['Wednesday 28th', 'Milad un-Nabi']
       ]],
-    ['November', 'Safar/Rabi al-Awwal',
+    ['November', 'Rabi al-Awwal/Rabi al-Thani',
       [['Saturday, 14th', 'Students Mijalis'],
       ['Sunday 15th', 'Chandraat'],
       ['Sunday 22nd', 'Bait-ul Khayal'],
@@ -103,7 +103,7 @@ export class SecondaryComponent implements OnInit {
       ['Monday 23rd', 'Paanch Baar Saal'],
       ['Monday 23rd - Sunday 29th', 'Bait-ul Khayal Statada']
       ]],
-    ['December', 'Safar/Rabi al-Awwal',
+    ['December', 'Rabi al-Thani/Jamada al-Awwal',
       [['Sunday 13th', 'Salgirah'],
       ['Tuesday 15th', 'Chandraat (K)'],
       ['Saturday 19th', 'Students Mijalis (K)'],

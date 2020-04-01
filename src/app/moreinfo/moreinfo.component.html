@@ -1,0 +1,40 @@
+<div class="more-info">
+	<mat-card>To enroll for receiving Jamatkhana closure information and other emergency alerts via text/SMS, please
+		send an <b>SMS to 94502</b> and enter <b>“WDC”</b> in the contents of the text.<br>
+		<hr>
+		<a href="sms:94502?body=WDC"><button class="button enroll">Enroll <br><i class="device-name">(for
+					Android)</i></button></a>
+		<!-- <a href="sms:94502;body=WDC"><button class="button enroll">Enroll <br><i class="device-name">(for
+					iPhone)</i></button></a> -->
+		<span class="material-icons msg-error" (click)="showErr = !showErr">
+			error
+		</span>
+		<p *ngIf="showErr" class="msg-err">In case if you receives an error while attempting to opt in to Mass Texting
+			Tool, in such
+			rare cases please
+			reach out to your local telephone carriers to adjust some carrier settings associated with your account.
+		</p>
+	</mat-card><br>
+	<mat-card>For Confidential assistance, you can reach out to the <b>ACCESS</b> hotline.<br>
+		<hr>
+		<a href="tel:+1-844-552-2237"><button class="button enroll">Call ACCESS</button></a>
+	</mat-card><br>
+	<mat-card>Information about some local resources:<br>
+		<hr>
+		<a href="https://www.fairfaxcounty.gov/health/novel-coronavirus"><button class="button enroll">Fairfax
+				County</button></a>
+		<a href="https://montgomerycountymd.gov/hhs/rightnav/coronavirus.html"><button class="button enroll">Montgomery
+				County</button></a>
+		<a href="https://coronavirus.dc.gov"><button class="button enroll">Washington D.C.</button></a>
+		<a href="https://www.loudoun.gov/5307/Coronavirus"><button class="button enroll">Loudoun County</button></a>
+		<a
+			href="https://wordpress.us12.list-manage.com/track/click?u=1431958df361c78827250dcb4&id=699d566bf8&e=2b38459c75"><button
+				class="button enroll">Arlington County</button></a>
+		<a href="https://www.alexandriava.gov/Coronavirus"><button class="button enroll">Alexandria County</button></a>
+		<a href="https://www.princegeorgescountymd.gov/3397/Coronavirus"><button class="button enroll">PG
+				County</button></a>
+		<a
+			href="https://wordpress.us12.list-manage.com/track/click?u=1431958df361c78827250dcb4&id=728402e42c&e=2b38459c75"><button
+				class="button enroll">Baltimore County</button></a>
+	</mat-card>
+</div>

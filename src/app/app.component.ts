@@ -12,8 +12,8 @@ export class AppComponent {
   navLinks = [
     { path: 'events', label: 'Virtual Events' },
     { path: 'rec', label: 'REC Announcements' },
-    { path: 'moreinfo', label: 'Helpful Information' },
-    { path: 'mijalis', label: 'Upcoming Mijalis' },
+    { path: 'moreinfo', label: 'Helpful Services & Info.' },
+    { path: 'mijalis', label: 'Mijalis 2020' },
   ];
 
   panelOpenState = false;

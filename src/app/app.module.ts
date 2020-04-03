@@ -24,6 +24,8 @@ import { RecGeneralComponent } from './rec/grades/rec-general/rec-general.compon
 import { MoreinfoComponent } from './moreinfo/moreinfo.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { ResourcesComponent } from './resources/resources.component';
+import { FaqComponent } from './faq/faq.component';
 
 const appRoutes: Routes = [
   {
@@ -41,7 +43,8 @@ const appRoutes: Routes = [
       { path: 'primary', component: RecPrimaryComponent },
       { path: 'secondary', component: RecSecondaryComponent }]
   },
-  { path: 'moreinfo', component: MoreinfoComponent }
+  { path: 'moreinfo', component: MoreinfoComponent },
+  { path: 'resources', component: ResourcesComponent },
 ];
 
 @NgModule({
@@ -55,6 +58,8 @@ const appRoutes: Routes = [
     RecSecondaryComponent,
     RecGeneralComponent,
     MoreinfoComponent,
+    ResourcesComponent,
+    FaqComponent,
   ],
   imports: [
     RouterModule.forRoot(

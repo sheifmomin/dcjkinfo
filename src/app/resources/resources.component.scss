@@ -1,0 +1,103 @@
+.more-info {
+	padding: 20px;
+}
+
+.button {
+	background-color: #4caf50; /* Green */
+	border: none;
+	color: white;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.enroll {
+	background-color: white;
+	color: black;
+	border: 2px solid #4caf50;
+}
+
+.enroll:hover {
+	background-color: #4caf50;
+	color: white;
+}
+
+.info-btn {
+	cursor: pointer;
+	background-color: #4caf50;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	padding: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.info-btn:hover {
+	background-color: #2a4d2c; /* Green */
+}
+
+.theismaili {
+	background: white url(https://pbs.twimg.com/profile_images/883275074903482370/vwT0Ut3n_400x400.jpg) no-repeat;
+}
+
+.cdc {
+	background: white url(https://ivfminnesota.com/wp-content/uploads/2018/08/cdc-logo-2.jpg) no-repeat;
+	background-position: center left;
+}
+
+.focususa {
+	background: white url(https://www.guidestar.org/ViewEdoc.aspx?eDocId=4078364&approved=True) no-repeat;
+	background-position: center left;
+}
+
+.messagecouncil {
+	background: white
+		url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQJovLDPyJ7z7LF_Svg5_r_jp21nYyv2F1wTu2QY7YDaXt1P158&usqp=CAU)
+		no-repeat;
+	background-position: center left;
+}
+
+.news {
+	background-size: 100px;
+	height: 100px;
+	width: 20rem;
+	color: black;
+	padding-left: 100px;
+	border: 2px solid #4caf50;
+}
+
+.news:hover {
+	box-shadow: 2px 2px 2px 2px;
+	font-weight: bold;
+}
+
+.info-btn {
+	cursor: pointer;
+	background-color: #4caf50;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	padding: 3px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.info-btn:hover {
+	background-color: #2a4d2c; /* Green */
+}

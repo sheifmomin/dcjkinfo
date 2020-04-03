@@ -12,7 +12,8 @@ export class AppComponent {
   navLinks = [
     { path: 'events', label: 'Virtual Events' },
     { path: 'rec', label: 'REC Announcements' },
-    { path: 'moreinfo', label: 'Helpful Services & Info.' },
+    { path: 'moreinfo', label: 'Helpful Services' },
+    { path: 'resources', label: 'COVID-19 Resources' },
     { path: 'mijalis', label: 'Mijalis 2020' },
   ];
 

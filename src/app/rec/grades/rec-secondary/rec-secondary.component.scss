@@ -19,17 +19,14 @@ body {
 }
 
 .secondary-style {
-  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .mat-expansion-panel-header.mat-expanded,
 .mat-expansion-panel-header.mat-expanded:hover,
 .mat-expansion-panel-header.mat-expanded:focus {
   background-color: #c1ffc1;
-}
-
-.secondary-style {
-  padding: 15px;
 }
 
 #rec-clases {
@@ -61,23 +58,18 @@ body {
 }
 
 #rec-clases {
-  font-size: 17px;
+  font-size: 11pt;
 }
 
-@media screen and (max-width: 1000px) {
-  #rec-clases {
-    font-size: 15px;
-  }
+.responsive-video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 -> 9/16x100 */
+  overflow: hidden;
 }
-
-@media screen and (max-width: 800px) {
-  #rec-clases {
-    font-size: 13px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  #rec-clases {
-    font-size: 11px;
-  }
+.responsive-video .video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

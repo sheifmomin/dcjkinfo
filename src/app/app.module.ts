@@ -45,6 +45,7 @@ const appRoutes: Routes = [
   },
   { path: 'moreinfo', component: MoreinfoComponent },
   { path: 'resources', component: ResourcesComponent },
+  { path: 'faq', component: FaqComponent },
 ];
 
 @NgModule({

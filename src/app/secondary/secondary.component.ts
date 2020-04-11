@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SecondaryComponent implements OnInit {
 
-  public mijalis = [
+  public oldMijalis = [
     ['January', 'Jamada al-Awwal/Jamada al-Thani', [
       ['Thursday 2nd', 'Mawlano Rojo'],
       ['Friday 3rd', 'Paanch Baar Saal'],
@@ -32,7 +32,10 @@ export class SecondaryComponent implements OnInit {
       ['Saturday 28th', 'Huzur Panje Bhenu'],
       ['Sunday 29th', 'Bait-ul Khayal (K)'],
       ['Tuesday 31th', 'Mawlano Rojo (K)']
-    ]],
+    ]]
+  ];
+
+  public mijalis = [
     ['April', 'Shaban/Ramadan',
       [['Wednesday, 1st', 'Paanch Baar Saal'],
       ['Saturday 4th - Friday 10th', 'Muskil Assan Satadal'],
@@ -117,14 +120,5 @@ export class SecondaryComponent implements OnInit {
   }
 
   ngOnInit() {
-  }
-
-  public getMonth() {
-    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
-      'July', 'August', 'September', 'October', 'November', 'December'
-    ];
-    const curr = new Date();
-    console.log(curr.getMonth().toString())
-    return monthNames[curr.getMonth().toString()];
   }
 }

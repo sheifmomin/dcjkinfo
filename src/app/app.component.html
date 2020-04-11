@@ -2,7 +2,7 @@
   <mat-drawer #drawer class="example-sidenav" mode="side" [mode]="'over'">
     <mat-list>
       <mat-list-item (click)="drawer.toggle()">
-        <span class="material-icons close-icon">
+        <span class="material-icons close-icon icononly">
           close
         </span></mat-list-item>
     </mat-list><br>
@@ -18,15 +18,29 @@
     </mat-label>
   </mat-drawer>
   <mat-drawer-content>
-    <div class="header">
-      <span class="material-icons menu-bar" (click)="drawer.toggle()">
+    <mat-toolbar class="flexSpaceBetween">
+      <span class="material-icons toolbar-icon toolbar-icon-menu" (click)="drawer.toggle()">
         menu
       </span>
-      <h3>DC JK Information Board</h3>
+      <span>
+        <h3>DC JK Information Board</h3>
+      </span>
+      <span [class.icononly-select]="mainNotice" class="material-icons toolbar-icon toolbar-icon-info"
+        (click)="mainNotice = !mainNotice">
+        announcement
+      </span>
+    </mat-toolbar>
+    <div *ngIf="mainNotice" class="main-notice">
+      <div class="closure-info">
+        <p class="close-warning"><u>NEDMT</u> - Per continued government restrictions on public gatherings,
+          all USA Jamatkhanas, REC, and ECD Centers will remain closed through April 30th. Remote RE & ECD will continue
+          to be offered during this time, as possible. Updated USA Jamatkhana closure information can be found here at
+          <a href="https://the.ismaili/usa/covid-19-updates" target="_blank">The Ismaili Website</a>.</p>
+      </div>
     </div>
-
     <router-outlet></router-outlet>
     <br>
+    <hr>
     <div class="footer-copyright text-center py-3 intro"><i>© 2020 Copyright: DC JK Management</i>
     </div>
     <br>

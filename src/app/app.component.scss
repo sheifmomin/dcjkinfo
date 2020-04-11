@@ -37,17 +37,14 @@ body {
   color: white;
 }
 
-h2 {
-  text-align: center;
+.flexExpand {
+  flex: 1 1 auto;
 }
 
-span {
-  position: absolute;
-  left: 0;
-  font-size: 2rem;
-  padding-left: 1rem;
-  padding-top: 0.8rem;
-  cursor: pointer;
+.flexSpaceBetween {
+  background-color: #9370db;
+  justify-content: space-between;
+  color: white;
 }
 
 mat-nav-list.list-horizontal {
@@ -79,7 +76,58 @@ mat-nav-list.list-horizontal {
   background-color: #6b5694;
 }
 
-.close-icon:hover,
-.menu-bar:hover {
+.close-icon {
+  padding-right: 2px;
+  cursor: pointer;
+}
+
+.close-icon:hover {
   color: lightgray;
+}
+
+.example-fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+.toolbar-icon-menu {
+  font-size: 24pt;
+}
+
+.toolbar-icon-info {
+  font-size: 18pt;
+  padding: 5px;
+}
+
+.toolbar-icon {
+  cursor: pointer;
+  outline: none;
+}
+
+.main-notice {
+  height: auto;
+  background-color: rgba(231, 229, 229, 0.842);
+  border: 0.3px solid rgba(0, 0, 0, 0.5);
+}
+
+.close-warning {
+  color: red;
+  font-size: 10.5pt;
+}
+
+.closure-info {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.icononly-select {
+  outline: 0;
+  border: 2px solid transparent !important;
+  outline: none !important;
+  border-radius: 0.7rem;
+  z-index: 10;
+  text-decoration: none;
+  border: 2px solid #d80 !important;
+  border-radius: 0.7rem;
+  background-color: #6b5694;
+  outline: none !important;
 }

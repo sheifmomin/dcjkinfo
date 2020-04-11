@@ -1,0 +1,24 @@
+<div class="primary-style">
+	<span class="the-source">Source: <a
+			href="https://the.ismaili/global/covid-19-updates/frequently-asked-questions/covid-19-frequently-asked-questions"
+			target="_blank"><button class="button info-btn">the.ismaili
+			</button></a></span>
+	<hr>
+	<div class="faq-hdr">This information page answers common questions about the novel coronavirus:</div>
+	<mat-accordion>
+		<mat-expansion-panel *ngFor="let event of mijalis">
+			<mat-expansion-panel-header class="datehdr" collapsedHeight="3.2rem" expandedHeight="3.2rem">
+				<mat-panel-title class="question-month">
+					<i class="material-icons question-icon">
+						question_answer
+					</i>&nbsp;&nbsp; <span>{{event[0]}}</span>
+				</mat-panel-title>
+			</mat-expansion-panel-header>
+			<div class="calendar-events" *ngFor="let date of event[1]">
+				<p>
+					&#9673;&nbsp; {{date}}
+				</p>
+			</div>
+		</mat-expansion-panel>
+	</mat-accordion>
+</div>

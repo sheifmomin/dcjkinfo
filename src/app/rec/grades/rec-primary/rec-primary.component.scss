@@ -19,11 +19,43 @@ body {
 }
 
 .primary-style {
-  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .mat-expansion-panel-header.mat-expanded,
 .mat-expansion-panel-header.mat-expanded:hover,
 .mat-expansion-panel-header.mat-expanded:focus {
   background-color: #c1ffc1;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.cdc {
+  background: white url(https://img.icons8.com/plasticine/2x/survey.png) no-repeat;
+  background-position: center left;
+}
+
+.news {
+  background-size: 50px;
+  height: 70px;
+  width: 12rem;
+  color: black;
+  padding-left: 3.5rem;
+  border: 2px solid #4caf50;
+}
+
+.intro {
+  padding: 5px !important;
 }

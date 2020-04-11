@@ -2,20 +2,16 @@
   margin-left: 8px;
 }
 
-/* Header/Logo Title */
-.header {
-  padding: 6px;
-  text-align: center;
-  background: #9370db;
-  color: white;
-}
-
 body {
   font-family: Arial;
 }
 
 .datehdr {
   background-color: #e0ffff;
+}
+
+.olddatehdr {
+  background-color: lightgray;
 }
 
 .primary-style {
@@ -39,7 +35,6 @@ body {
   white-space: nowrap;
 }
 
-.close-warning {
-  color: red;
-  font-size: 13px;
+.calendar-events {
+  height: 35px;
 }
